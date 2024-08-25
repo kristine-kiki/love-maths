@@ -45,6 +45,8 @@ function runGame(gameType) {
     } else if (gameType === "subtract") {
         displaySubtractQuestion(num1, num2);
     } else if (gameType === "division") {
+        let result = Math.floor(Math.random() * 25) + 1;
+        num1 = result * num2; 
         displayDivisionQuestion(num1, num2);
     } else {
         alert(`Unknown game type: ${gameType}`);
